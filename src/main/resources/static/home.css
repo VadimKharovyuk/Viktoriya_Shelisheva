@@ -1,3 +1,155 @@
+/*!* test1.CSS *!*/
+
+/*!* General Styles *!*/
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    background-color: #f5f5f5; !* Светло-бежевый фон *!*/
+/*}*/
+
+/*.header {*/
+/*    background-color: #1b404f; !* Темно-синий фон *!*/
+/*    color: #fff;*/
+/*    padding: 10px 0;*/
+/*}*/
+
+/*.logo {*/
+/*    display: inline-block;*/
+/*}*/
+
+/*.logo a {*/
+/*    text-decoration: none;*/
+/*    color: #fff;*/
+/*}*/
+
+/*.logo img {*/
+/*    height: 30px;*/
+/*    vertical-align: middle;*/
+/*    margin-right: 10px;*/
+/*}*/
+
+/*.logo span {*/
+/*    font-weight: bold;*/
+/*    font-size: 1.2em;*/
+/*    vertical-align: middle;*/
+/*    color: #e67e22; !* Оранжевый цвет для логотипа *!*/
+/*}*/
+
+/*.nav ul {*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.nav ul li {*/
+/*    display: inline;*/
+/*    margin-right: 20px;*/
+/*}*/
+
+/*.nav ul li a {*/
+/*    color: #fff;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.nav ul li a:hover {*/
+/*    color: #e67e22; !* Оранжевый цвет для ссылок при наведении *!*/
+/*}*/
+
+/*main {*/
+/*    padding: 20px;*/
+/*}*/
+
+/*!* Section Styles *!*/
+/*section {*/
+/*    margin-bottom: 40px;*/
+/*    background-color: #fff; !* Белый фон для разделов *!*/
+/*    padding: 20px;*/
+/*    border-radius: 5px;*/
+/*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+/*h1, h2, h3 {*/
+/*    color: #2c3e50; !* Темно-синий цвет для заголовков *!*/
+/*}*/
+
+/*!* Button Styles *!*/
+/*.btn {*/
+/*    display: inline-block;*/
+/*    background-color: #e67e22; !* Оранжевый цвет для кнопок *!*/
+/*    color: #fff;*/
+/*    padding: 10px 20px;*/
+/*    text-decoration: none;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*.btn:hover {*/
+/*    background-color: #d35400; !* Темно-оранжевый цвет при наведении на кнопку *!*/
+/*}*/
+
+/*!* Form Styles *!*/
+/*form label {*/
+/*    display: block;*/
+/*    margin-bottom: 5px;*/
+/*    color: #2c3e50; !* Темно-синий цвет для меток *!*/
+/*}*/
+
+/*form input[type="text"],*/
+/*form input[type="email"],*/
+/*form textarea {*/
+/*    width: 100%;*/
+/*    padding: 10px;*/
+/*    margin-bottom: 10px;*/
+/*    border: 1px solid #ccc;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*form button {*/
+/*    background-color: #2c3e50; !* Темно-синий цвет для кнопки отправки формы *!*/
+/*    color: #fff;*/
+/*    border: none;*/
+/*    padding: 10px 20px;*/
+/*    border-radius: 5px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*form button:hover {*/
+/*    background-color: #1a252f; !* Черный цвет при наведении на кнопку отправки формы *!*/
+/*}*/
+
+/*!* Footer Styles *!*/
+/*footer {*/
+/*    background-color: #070606; !* Темно-синий фон для подвала *!*/
+/*    color: #e5e1dc;*/
+/*    padding: 20px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*footer ul {*/
+/*    list-style-type: none;*/
+/*    padding: 0;*/
+/*}*/
+
+/*footer ul li {*/
+/*    display: inline;*/
+/*    margin-right: 10px;*/
+/*}*/
+
+/*footer ul li a {*/
+/*    color: #fff;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*footer ul li a:hover {*/
+/*    color: #e67e22; !* Оранжевый цвет для ссылок при наведении *!*/
+/*}*/
+/*.home{*/
+/*    text-align: center;*/
+/*}*/
+
+
+
+
 /* test1.CSS */
 
 /* General Styles */
@@ -6,6 +158,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f5f5f5; /* Светло-бежевый фон */
+    color: #333; /* Темный текст */
 }
 
 .header {
@@ -69,6 +222,10 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.home {
+    text-align: center;
+}
+
 h1, h2, h3 {
     color: #2c3e50; /* Темно-синий цвет для заголовков */
 }
@@ -76,7 +233,7 @@ h1, h2, h3 {
 /* Button Styles */
 .btn {
     display: inline-block;
-    background-color: #e67e22; /* Оранжевый цвет для кнопок */
+    background-color: #16a085; /* Зеленый цвет для кнопок */
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -84,7 +241,7 @@ h1, h2, h3 {
 }
 
 .btn:hover {
-    background-color: #d35400; /* Темно-оранжевый цвет при наведении на кнопку */
+    background-color: #1abc9c; /* Более яркий зеленый цвет при наведении на кнопку */
 }
 
 /* Form Styles */
@@ -105,7 +262,7 @@ form textarea {
 }
 
 form button {
-    background-color: #2c3e50; /* Темно-синий цвет для кнопки отправки формы */
+    background-color: #e74c3c; /* Розовый цвет для кнопки отправки формы */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -114,12 +271,12 @@ form button {
 }
 
 form button:hover {
-    background-color: #1a252f; /* Черный цвет при наведении на кнопку отправки формы */
+    background-color: #c0392b; /* Более темный розовый цвет при наведении на кнопку отправки формы */
 }
 
 /* Footer Styles */
 footer {
-    background-color: #545151; /* Темно-синий фон для подвала */
+    background-color: #9ea0cb; /* Теплый оранжевый цвет для подвала */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -143,6 +300,4 @@ footer ul li a {
 footer ul li a:hover {
     color: #e67e22; /* Оранжевый цвет для ссылок при наведении */
 }
-.home{
-    text-align: center;
-}
+
