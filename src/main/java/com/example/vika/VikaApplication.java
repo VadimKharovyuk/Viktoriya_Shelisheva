@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class VikaApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(VikaApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(VikaApplication.class, args);
+    }
 
 }
