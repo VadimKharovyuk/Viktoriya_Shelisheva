@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="/Contact.css">
+</head>
+<nav class="nav">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li><img src="/Uk.png"  height="40"  width="40" alt="Логотип"></li>
+        <li><a href="/">Главная</a></li>
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#blog">Биография</a></li>
+        <!--            <li><a href="#testimonials">Отзывы</a></li>-->
+        <li><a href="#contact">Контакты</a></li>
+
+    </ul>
+</nav>
+<body>
+<h2>Contact List</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Email</th>
+        <th>Message</th>
+        <th>Name</th>
+        <th>Phone</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="contact : ${contact}">
+        <td th:text="${contact.email}"></td>
+        <td th:text="${contact.message}"></td>
+        <td th:text="${contact.name}"></td>
+        <td th:text="${contact.phone}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

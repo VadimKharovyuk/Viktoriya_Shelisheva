@@ -20,11 +20,11 @@
             <li></li>
             <li></li>
             <li><img src="/Uk.png"  height="40"  width="40" alt="Логотип"></li>
-            <li><a href="#home">Главная</a></li>
+            <li><a href="/">Главная</a></li>
             <li><a href="#about">Обо мне</a></li>
             <li><a href="#services">Услуги</a></li>
-            <li><a href="#blog">Блог</a></li>
-<!--            <li><a href="#testimonials">Отзывы</a></li>-->
+            <li><a href="#blog">Биография</a></li>
+            <li><a href="/contact">Отзывы</a></li>
             <li><a href="#contact">Контакты</a></li>
 
         </ul>
@@ -52,14 +52,14 @@
             <li>Групповая терапия</li>
             <li>Онлайн-консультации</li>
         </ul>
-        <a href="#" class="btn">Записаться на консультацию</a>
+        <a href="#contact" class="btn">Записаться на консультацию</a>
     </section>
 
     <section id="blog">
         <h2>Биография </h2>
         <div class="blog-post">
             <img src="/2024-03-28 17.09.15.jpg" alt="Изображение поста 1">
-            <h3>**Доктор Виктория Селищева:** </h3>
+            <h3 class="home">**Доктор Виктория Селищева:** </h3>
             <p>
                 - *15 сентября 1994 года<br>
                 - * Харьков, Украина<br><br>
@@ -89,19 +89,18 @@
 
     <section id="contact">
         <h2>Принять участие </h2>
-        <form>
+        <form action="/contact" method="post">
             <label for="name">Имя:</label>
             <input type="text" id="name" name="name" required>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="email">Номер мобильного:</label>
-            <input type="email" id="" name="email" required>
+            <label for="phone">Номер мобильного:</label>
+            <input type="text" id="phone" name="phone" required>
 
             <label for="message">Сообщение:</label>
             <textarea id="message" name="message" required></textarea>
-
 
             <button type="submit">Отправить</button>
         </form>

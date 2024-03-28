@@ -210,15 +210,15 @@ body {
 }
 
 main {
-    padding: 20px;
+    padding: 80px;
 }
 
 /* Section Styles */
 section {
     margin-bottom: 40px;
     background-color: #fff; /* Белый фон для разделов */
-    padding: 20px;
-    border-radius: 5px;
+    padding: 60px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 

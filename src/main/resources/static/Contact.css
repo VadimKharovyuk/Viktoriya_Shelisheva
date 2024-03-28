@@ -1,0 +1,184 @@
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    background-color: #f0f0f0; !* Серый фон *!*/
+/*}*/
+
+/*h2 {*/
+/*    text-align: center;*/
+/*    margin-top: 20px;*/
+/*    color: #333; !* Черный текст *!*/
+/*}*/
+
+/*table {*/
+/*    width: 100%;*/
+/*    border-collapse: collapse;*/
+/*    margin-top: 20px;*/
+/*    background-color: #fff; !* Белый фон *!*/
+/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); !* Тень *!*/
+/*}*/
+
+/*th, td {*/
+/*    border: 1px solid #dddddd;*/
+/*    text-align: left;*/
+/*    padding: 8px;*/
+/*}*/
+
+/*th {*/
+/*    background-color: #ffcccc; !* Розовый фон *!*/
+/*}*/
+
+/*tr:nth-child(even) {*/
+/*    background-color: #ccffcc; !* Зеленый фон *!*/
+/*}*/
+
+/*tr:hover {*/
+/*    background-color: #ccccff; !* Синий фон при наведении *!*/
+/*}*/
+
+/*.logo img {*/
+/*    height: 30px;*/
+/*    vertical-align: middle;*/
+/*    margin-right: 10px;*/
+/*}*/
+
+/*.logo span {*/
+/*    font-weight: bold;*/
+/*    font-size: 1.2em;*/
+/*    vertical-align: middle;*/
+/*    color: #e67e22; !* Оранжевый цвет для логотипа *!*/
+/*}*/
+
+/*.nav ul {*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.nav ul li {*/
+/*    display: inline;*/
+/*    margin-right: 20px;*/
+/*}*/
+
+/*.nav ul li a {*/
+/*    color: #090808;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.nav ul li a:hover {*/
+/*    color: #e67e22; !* Оранжевый цвет для ссылок при наведении *!*/
+/*}*/
+
+
+
+
+/*!*.logo img {*!*/
+/*!*    height: 30px;*!*/
+/*!*    vertical-align: middle;*!*/
+/*!*    margin-right: 10px;*!*/
+/*!*}*!*/
+
+/*!*.logo span {*!*/
+/*!*    font-weight: bold;*!*/
+/*!*    font-size: 1.2em;*!*/
+/*!*    vertical-align: middle;*!*/
+/*!*    color: #e67e22; !* Оранжевый цвет для логотипа *!*!*/
+/*!*}*!*/
+
+/*!*.nav ul {*!*/
+/*!*    list-style-type: none;*!*/
+/*!*    margin: 0;*!*/
+/*!*    padding: 0;*!*/
+/*!*}*!*/
+
+/*!*.nav ul li {*!*/
+/*!*    display: inline;*!*/
+/*!*    margin-right: 20px;*!*/
+/*!*}*!*/
+
+/*!*.nav ul li a {*!*/
+/*!*    color: #090808;*!*/
+/*!*    text-decoration: none;*!*/
+/*!*}*!*/
+
+/*!*.nav ul li a:hover {*!*/
+/*!*    color: #e67e22; !* Оранжевый цвет для ссылок при наведении *!*!*/
+/*!*}*!*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Серый фон */
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333; /* Черный текст */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff; /* Белый фон */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #ffcccc; /* Розовый фон */
+}
+
+tr:nth-child(even) {
+    background-color: #ccffcc; /* Зеленый фон */
+}
+
+tr:hover {
+    background-color: #ccccff; /* Синий фон при наведении */
+}
+
+.logo img {
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: 1.2em;
+    vertical-align: middle;
+    color: #e67e22; /* Оранжевый цвет для логотипа */
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    color: #dad0d0;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    color: #e67e22; /* Оранжевый цвет для ссылок при наведении */
+}
+.nav{
+    background-color: #333333;
+    padding: 20px 0;
+}
