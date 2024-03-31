@@ -1,92 +1,3 @@
-<!--<!DOCTYPE html>-->
-<!--<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">-->
-<!--<head>-->
-<!--    <title>Admin Page</title>-->
-<!--    <style>-->
-<!--        body {-->
-<!--            font-family: Arial, sans-serif;-->
-<!--            background-color: #1f2028;-->
-<!--            margin: 0;-->
-<!--            padding: 0;-->
-<!--        }-->
-
-<!--        h1 {-->
-<!--            text-align: center;-->
-<!--            color: #d52d21; /* Blue */-->
-<!--        }-->
-
-<!--        form {-->
-<!--            width: 300px;-->
-<!--            margin: 20px auto;-->
-<!--            padding: 20px;-->
-<!--            background-color: #6c6464;-->
-<!--            border-radius: 5px;-->
-<!--            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);-->
-<!--        }-->
-
-<!--        input[type="text"],-->
-<!--        input[type="password"] {-->
-<!--            width: calc(100% - 20px);-->
-<!--            padding: 10px;-->
-<!--            margin: 10px 0;-->
-<!--            border: 1px solid #ccc;-->
-<!--            border-radius: 5px;-->
-<!--            box-sizing: border-box;-->
-<!--        }-->
-
-<!--        input[type="submit"] {-->
-<!--            width: 100%;-->
-<!--            padding: 10px;-->
-<!--            background-color: #47d516; /* Blue */-->
-<!--            color: #9a9292;-->
-<!--            border: none;-->
-<!--            border-radius: 5px;-->
-<!--            cursor: pointer;-->
-<!--        }-->
-
-<!--        input[type="submit"]:hover {-->
-<!--            background-color: #0056b3; /* Darker blue */-->
-<!--        }-->
-
-<!--        .error-message {-->
-<!--            color: #dc3545; /* Red */-->
-<!--            text-align: center;-->
-<!--            margin-top: 10px;-->
-<!--        }-->
-
-<!--        a {-->
-<!--            display: block;-->
-<!--            text-align: center;-->
-<!--            margin-top: 20px;-->
-<!--            color: #28a745; /* Green */-->
-<!--            text-decoration: none;-->
-<!--        }-->
-
-<!--        a:hover {-->
-<!--            color: #218838; /* Darker green */-->
-<!--        }-->
-<!--    </style>-->
-<!--</head>-->
-<!--<body>-->
-<!--<h1>Admin Page</h1>-->
-<!--<div th:if="${param.error}" class="error-message">-->
-<!--    Неверное имя пользователя и пароль.-->
-<!--</div>-->
-<!--<div th:if="${param.logout}" class="error-message">-->
-<!--    Вы вышли из системы.-->
-<!--</div >-->
-<!--<form th:action="@{/login}" method="post">-->
-<!--    <div>-->
-<!--        <input type="text" name="username" placeholder="Username"/>-->
-<!--    </div>-->
-<!--    <div>-->
-<!--        <input type="password" name="password" placeholder="Password"/>-->
-<!--    </div>-->
-<!--    <input type="submit" value="Log in" />-->
-<!--</form>-->
-
-<!--</body>-->
-<!--</html>-->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
 <head>
@@ -147,7 +58,7 @@
             display: block;
             text-align: center;
             margin-top: 20px;
-            color: #28a745; /* Green */
+            color: #e6e8ec; /* Green */
             text-decoration: none;
         }
 
@@ -173,6 +84,7 @@
     </div>
     <input type="submit" value="Log in" />
 </form>
+<a href="/"> Назад</a>
 
 
 </body>
