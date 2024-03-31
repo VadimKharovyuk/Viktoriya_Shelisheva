@@ -17,15 +17,21 @@ import org.springframework.security.web.SecurityFilterChain;
 
 public class Config {
 
-  private  BCryptPasswordEncoder encoder() {
-      return new BCryptPasswordEncoder();
-  }
+//  private  BCryptPasswordEncoder encoder() {
+//      return new BCryptPasswordEncoder();
+//  }
 
 
     @Bean
     public SecurityFilterChain securityFilterChain (HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(req->req.
                 requestMatchers("/registration").permitAll()
+                        .requestMatchers("/").permitAll()
+                        .requestMatchers("/home.css/**").permitAll()
+                        .requestMatchers("/pic/**").permitAll()
+                        .requestMatchers("/contact").authenticated()
+
+
                 .anyRequest().authenticated())
 
                 .formLogin(form->form.loginPage("/login").permitAll())

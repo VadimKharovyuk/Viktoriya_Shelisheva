@@ -2,7 +2,7 @@ package com.example.vika.controller;
 
 import com.example.vika.model.Contact;
 import com.example.vika.repository.ContactRepository;
-import com.example.vika.repository.UserRepository;
+//import com.example.vika.repository.UserRepository;
 import com.example.vika.service.ContactImpl;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;

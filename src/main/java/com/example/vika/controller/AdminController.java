@@ -21,14 +21,13 @@ public class AdminController {
     }
 
     @GetMapping("/registration")
-    public String registration(Model model){
-        model.addAttribute("UserEntity",new UserEntity());
+    public String registration(){
         return "registration";
     }
 
 
     @PostMapping("/registration")
-    public String saveUser(@ModelAttribute ("userEntity") UserEntity userEntity ,Model model){
+    public String saveUser(UserEntity userEntity ){
       userRepository.save(userEntity);
 
         return "redirect:/login";
