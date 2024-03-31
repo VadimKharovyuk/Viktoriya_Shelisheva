@@ -1,6 +1,8 @@
 package com.example.vika.controller;
 
 import com.example.vika.model.Contact;
+import com.example.vika.repository.ContactRepository;
+import com.example.vika.repository.UserRepository;
 import com.example.vika.service.ContactImpl;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -13,7 +15,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @AllArgsConstructor
 
 public class MainController {
-    private final ContactImpl contactService;
+    private final ContactImpl contacservive;
 
     @GetMapping("/")
     public String homePage(){
@@ -21,12 +23,12 @@ public class MainController {
     }
     @GetMapping("/contact")
     public String getAllContact(Model model){
-        model.addAttribute("contact",contactService.contactList());
+        model.addAttribute("contact",contacservive.contactList());
         return "contact";
     }
     @PostMapping("/contact")
     public String saveContact(@ModelAttribute Contact contact){
-        contactService.saveContact(contact);
+    contacservive.saveContact(contact);
         return "home";
     }
 }
