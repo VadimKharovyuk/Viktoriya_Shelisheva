@@ -6,3 +6,9 @@ CREATE TABLE contact (
                          phone varchar(255),
                          PRIMARY KEY (id)
 );
+CREATE TABLE user_entity (
+                             id BIGSERIAL NOT NULL PRIMARY KEY,
+                             password VARCHAR(255),
+                             username VARCHAR(255) UNIQUE
+);
+

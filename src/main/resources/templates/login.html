@@ -1,0 +1,168 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <title>Please Log In</title>-->
+<!--    <style>-->
+<!--        body {-->
+<!--            font-family: Arial, sans-serif;-->
+<!--            background-color: #f4f4f4;-->
+<!--            margin: 0;-->
+<!--            padding: 0;-->
+<!--        }-->
+
+<!--        h1 {-->
+<!--            text-align: center;-->
+<!--            color: #007bff; /* Blue */-->
+<!--        }-->
+
+<!--        form {-->
+<!--            width: 300px;-->
+<!--            margin: 20px auto;-->
+<!--            padding: 20px;-->
+<!--            background-color: #fff;-->
+<!--            border-radius: 5px;-->
+<!--            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);-->
+<!--        }-->
+
+<!--        input[type="text"],-->
+<!--        input[type="password"] {-->
+<!--            width: calc(100% - 20px);-->
+<!--            padding: 10px;-->
+<!--            margin: 10px 0;-->
+<!--            border: 1px solid #ccc;-->
+<!--            border-radius: 5px;-->
+<!--            box-sizing: border-box;-->
+<!--        }-->
+
+<!--        input[type="submit"] {-->
+<!--            width: 100%;-->
+<!--            padding: 10px;-->
+<!--            background-color: #007bff; /* Blue */-->
+<!--            color: #fff;-->
+<!--            border: none;-->
+<!--            border-radius: 5px;-->
+<!--            cursor: pointer;-->
+<!--        }-->
+
+<!--        input[type="submit"]:hover {-->
+<!--            background-color: #0056b3; /* Darker blue */-->
+<!--        }-->
+
+<!--        .error-message {-->
+<!--            color: #dc3545; /* Red */-->
+<!--            text-align: center;-->
+<!--            margin-top: 10px;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Please Log In</h1>-->
+<!--<div th:if="${param.error}" class="error-message">-->
+<!--    Invalid username and password.-->
+<!--</div>-->
+<!--<div th:if="${param.logout}" class="error-message">-->
+<!--    You have been logged out.-->
+<!--</div>-->
+<!--<form th:action="@{/login}" method="post">-->
+<!--    <div>-->
+<!--        <input type="text" name="username" placeholder="Username"/>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <input type="password" name="password" placeholder="Password"/>-->
+<!--    </div>-->
+<!--    <input type="submit" value="Log in" />-->
+<!--</form>-->
+<!--<a href="registration"> Регистарця</a>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Please Log In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff; /* Blue */
+        }
+
+        form {
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff; /* Blue */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker blue */
+        }
+
+        .error-message {
+            color: #dc3545; /* Red */
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #28a745; /* Green */
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #218838; /* Darker green */
+        }
+    </style>
+</head>
+<body>
+<h1>Please Log In</h1>
+<div th:if="${param.error}" class="error-message">
+    Invalid username and password.
+</div>
+<div th:if="${param.logout}" class="error-message">
+    You have been logged out.
+</div>
+<form th:action="@{/login}" method="post">
+    <div>
+        <input type="text" name="username" placeholder="Username"/>
+    </div>
+    <div>
+        <input type="password" name="password" placeholder="Password"/>
+    </div>
+    <input type="submit" value="Log in" />
+</form>
+<a href="/registration"> Регистрация</a>
+</body>
+</html>
+

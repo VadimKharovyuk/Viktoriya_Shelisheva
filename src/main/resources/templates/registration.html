@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/registration}" method="post" th:object="${UserEntity}">
+    <input th:field="*{username}" type="text" name="name" id="name">
+    <input th:field="*{password}" type="text" name="password" id="password">
+    <input type="submit" value="Рарегистрироваться">
+</form>
+
+</body>
+</html>
