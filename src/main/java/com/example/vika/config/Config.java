@@ -25,17 +25,16 @@ public class Config {
     @Bean
     public SecurityFilterChain securityFilterChain (HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(req->req.
-                requestMatchers("/registration").permitAll()
-                        .requestMatchers("/").permitAll()
+                requestMatchers("/").permitAll()
                         .requestMatchers("/home.css/**").permitAll()
                         .requestMatchers("/pic/**").permitAll()
+
+
                         .requestMatchers("/contact").authenticated()
-
-
                 .anyRequest().authenticated())
 
-                .formLogin(form->form.loginPage("/login").permitAll())
-                .logout(log->log.permitAll());
+                .formLogin(form->form.loginPage("/login").permitAll());
+//                .logout(log->log.permitAll());
         return http.build();
 
     }
