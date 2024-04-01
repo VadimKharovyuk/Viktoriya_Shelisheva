@@ -7,9 +7,7 @@ import com.example.vika.service.ContactImpl;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @AllArgsConstructor
@@ -30,5 +28,10 @@ public class MainController {
     public String saveContact(@ModelAttribute Contact contact){
     contacservive.saveContact(contact);
         return "home";
+    }
+    @RequestMapping("/contact/{id}")
+    public String deleteFromList(@PathVariable (name = "id") Long id){
+        contacservive.delete(id);
+        return "redirect:/contact";
     }
 }

@@ -284,7 +284,7 @@ form button:hover {
 
 /* Footer Styles */
 footer {
-    background-color: #9ea0cb; /* Теплый оранжевый цвет для подвала */
+    background-color: rgba(10, 10, 10, 0.45); /* Теплый оранжевый цвет для подвала */
     color: #fff;
     padding: 20px;
     text-align: center;

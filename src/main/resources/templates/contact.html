@@ -29,6 +29,7 @@
         <th>Message</th>
         <th>Name</th>
         <th>Phone</th>
+        <th>Action</th>
     </tr>
     </thead>
     <tbody>
@@ -37,6 +38,9 @@
         <td th:text="${contact.message}"></td>
         <td th:text="${contact.name}"></td>
         <td th:text="${contact.phone}"></td>
+        <td><a style="color: #d50e0e" th:href="@{/contact/{id}(id=${contact.id})}"><i class="fa-solid fa-trash me-4"></i>Delete</a>
+
+        </td>
     </tr>
     </tbody>
 </table>

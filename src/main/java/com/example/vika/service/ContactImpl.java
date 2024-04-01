@@ -17,4 +17,7 @@ public class ContactImpl {
     public void saveContact(Contact contact){
         contactRepository.save(contact);
     }
+    public void delete(Long id){
+        contactRepository.deleteById(id);
+    }
 }
