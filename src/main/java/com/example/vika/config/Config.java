@@ -17,10 +17,6 @@ import org.springframework.security.web.SecurityFilterChain;
 
 public class Config {
 
-//  private  BCryptPasswordEncoder encoder() {
-//      return new BCryptPasswordEncoder();
-//  }
-
 
     @Bean
     public SecurityFilterChain securityFilterChain (HttpSecurity http) throws Exception {
