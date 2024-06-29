@@ -325,6 +325,11 @@
             display: block;
             margin: 0 auto; /* Центрирование изображения */
         }
+        .message {
+            color: #107be5;
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
 
 
@@ -365,7 +370,7 @@
             Добро пожаловать в мой мир психологии и путешествия к самому себе.".</p>
     </section>
 
-    <section id="about">
+    <section id="about" class="blog-post">
         <h2>Виктория Селещева</h2>
         <img src="/pic/photo_2024-04-03 03.36.45.jpeg" alt="Фото психолога">
         <p>"Привет! Я - Виктория Селещева, психолог с опытом в семейном консультировании, терапии отношений и помощи при тревожных расстройствах.<br> Моя цель - создать поддерживающую и доверительную атмосферу, чтобы вместе мы могли исследовать и решать ваши проблемы.<br> Готова помочь вам!"</p>
@@ -388,7 +393,7 @@
     <section id="blog">
         <h2>Биография </h2>
         <div class="blog-post">
-            <img src="/pic/photo_2024-04-03 03.36.51.jpeg" alt="Изображение поста 1" class="center-image">
+            <img src="/pic/photo_2024-04-03 03.36.51.jpeg" alt="Изображение поста 1" >
             <h3 class="home">**Доктор Виктория Селищева:** </h3>
             <p>
                 - *15 сентября 1994 года<br>
@@ -423,9 +428,12 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section>
+<!--        <div class="message">-->
+<!--            <p th:text="${sucsec}"></p>-->
+<!--        </div>-->
         <h2 class="home">Принять участие </h2>
-        <form action="/contact" method="post">
+        <form action="/addContact" method="POST">
             <label for="name">Имя:</label>
             <input type="text" id="name" name="name" required>
 
