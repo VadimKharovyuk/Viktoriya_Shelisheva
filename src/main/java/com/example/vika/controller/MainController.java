@@ -28,10 +28,8 @@ public class MainController {
         return "contact";
     }
     @PostMapping("/addContact")
-    public String saveContact(@ModelAttribute Contact contact ) {
-
+    public String saveContact(@ModelAttribute Contact contact) {
     contacservive.saveContact(contact);
-//    redirectAttributes.addFlashAttribute("sucsec","спасибо за регистарцию");
         return "redirect:/";
     }
     @RequestMapping("/contact/{id}")

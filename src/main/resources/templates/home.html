@@ -357,7 +357,7 @@
             <li><a href="#services">Услуги</a></li>
             <li><a href="#blog">Биография</a></li>
             <li><a href="/contact">Admin Page</a></li>
-            <li><a href="#contact">Записаться</a></li>
+            <li><a href="#reg">Записаться</a></li>
 
         </ul>
     </nav>
@@ -428,10 +428,10 @@
         </div>
     </section>
 
-    <section>
-<!--        <div class="message">-->
-<!--            <p th:text="${sucsec}"></p>-->
-<!--        </div>-->
+    <section id="reg">
+        <div class="message">
+            <p th:text="${sucsec}"></p>
+        </div>
         <h2 class="home">Принять участие </h2>
         <form action="/addContact" method="POST">
             <label for="name">Имя:</label>
